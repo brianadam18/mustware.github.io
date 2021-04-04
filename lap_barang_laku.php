@@ -121,7 +121,7 @@ while($tl=$stmt->fetch(PDO::FETCH_ASSOC)){
 }
 $pdf->ln(1);
 $pdf->SetFont('Arial','B',12);
-$pdf->Cell(10,0.7,"Silahkan Lakukan Pembayaran Pada No Req.1941720190 AN Brian Adam ",0,0,'L');
+
 }
 $pdf->Output("laporan_barang_laku.pdf","I");
 

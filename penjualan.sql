@@ -41,21 +41,6 @@ CREATE TABLE `barang_terjual` (
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `barang_terjual1`
---
-
-CREATE TABLE `barang_terjual1` (
-  `id_barang` int(5) NOT NULL,
-  `tanggal` date NOT NULL,
-  `nama` varchar(50) NOT NULL,
-  `jumlah` int(5) NOT NULL,
-  `harga` int(50) NOT NULL,
-  `total_harga` int(50) NOT NULL,
-  `laba` int(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
 
 --
 -- Table structure for table `tb_barang`
@@ -101,10 +86,9 @@ ALTER TABLE `barang_terjual`
   ADD KEY `id_barang` (`id_barang`);
 
 --
--- Indexes for table `barang_terjual1`
+
 --
-ALTER TABLE `barang_terjual1`
-  ADD PRIMARY KEY (`id_barang`);
+
 
 --
 -- Indexes for table `tb_barang`
@@ -129,12 +113,7 @@ ALTER TABLE `barang_terjual`
   MODIFY `id_terjual` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `barang_terjual1`
---
-ALTER TABLE `barang_terjual1`
-  MODIFY `id_barang` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
---
 -- AUTO_INCREMENT for table `tb_barang`
 --
 ALTER TABLE `tb_barang`
